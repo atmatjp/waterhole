@@ -14,7 +14,7 @@
     </button>
     <nav class:open={menuOpen}>
       <a href="/about">about</a>
-      <a href="https://github.com/atmatjp/butumori">github</a>
+      <a href="https://github.com/atmatjp/butumori" target="_blank">github</a>
     </nav>
   </div>
 </header>
