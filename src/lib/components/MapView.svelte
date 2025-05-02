@@ -34,8 +34,8 @@
 
     const filtered = pavilions.filter((p) => {
       if (filter === "すべて") return true;
-      if (filter === "ジェンダートイレ") return p.unisex;
-      if (filter === "一般トイレ") return !p.unisex;
+      if (filter === "男女兼用トイレ") return p.unisex;
+      if (filter === "男女別トイレのみ") return p.male && p.female && !p.unisex;
       if (filter === "車椅子トイレ") return p.wheelchair;
       return true;
     });
