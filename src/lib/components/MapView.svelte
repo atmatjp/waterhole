@@ -55,7 +55,6 @@
         .bindPopup(`
   <div>
     <strong>${pavilion.name}</strong><br />
-    ${pavilion.description}<br />
     <ul style="margin: 0; padding: 0.5em 0 0 1em; font-size: 0.9em;">
       <li>男性用　: ${pavilion.male ? "yes" : "no"}</li>
       <li>女性用　: ${pavilion.female ? "yes" : "no"}</li>
