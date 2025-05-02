@@ -9,7 +9,7 @@
     "iconColor": "violet",
     "male": true,
     "female": true,
-    "unisex": false,
+    "unisex": true,
     "wheelchair": true
    },
     {
@@ -22,7 +22,7 @@
     "iconColor": "violet",
      "male": true,
     "female": true,
-    "unisex": false,
+    "unisex": true,
     "wheelchair": true
 
     },
