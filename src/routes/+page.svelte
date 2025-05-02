@@ -1,47 +1,65 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import { pavilions } from "$lib/pavilions";
-  import "../app.css";
-  import Header from "$lib/components/Header.svelte"; // ←追加
+  import Header from "$lib/components/Header.svelte";
+  import MapView from "$lib/components/MapView.svelte";
+  import FilterMenu from "$lib/components/FilterMenu.svelte";
+  import easttoilet from "$lib/data/toilet/toilet-east.json";
+  import westtoilet from "$lib/data/toilet/toilet-west.json";
+  import underRingToilet from "$lib/data/toilet/toilet-underRing.json";
+  import outsideRingtoilet from "$lib/data/toilet/toilet-outsideRing.json";
+  import insideRingtoilet from "$lib/data/toilet/toilet-insideRing.json";
+  import vending from "$lib/data/vending.json";
+  import type { Pavilion } from "$lib/types";
 
-  let menuOpen = false;
+  $: categories =
+    mode === "トイレ"
+      ? ["すべて", "ジェンダートイレ", "一般トイレ", "車椅子トイレ"]
+      : ["すべて"];
 
-  onMount(async () => {
-    const L = await import("leaflet");
-    await import("leaflet/dist/leaflet.css");
+  let filter = "すべて";
+  let mode = "トイレ";
 
-    const map = L.map("map").setView([34.649, 135.3834], 17);
+  $: pavilions =
+    mode === "トイレ"
+      ? [
+          ...(easttoilet as Pavilion[]),
+          ...(westtoilet as Pavilion[]),
+          ...(insideRingtoilet as Pavilion[]),
+          ...(outsideRingtoilet as Pavilion[]),
+          ...(underRingToilet as Pavilion[]),
+        ]
+      : (vending as Pavilion[]);
 
-    const customIcon = L.icon({
-      iconUrl: "/static/red.png",
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowUrl: "/static/marker-shadow.png",
-      shadowSize: [41, 41],
-    });
+  function handleFilterChange(value: string) {
+    filter = value;
+  }
 
-    pavilions.forEach((pavilion) => {
-      L.marker([pavilion.lat, pavilion.lng])
-        .addTo(map)
-        .bindPopup(
-          `<button class="popup-btn" data-id="${pavilion.id}">${pavilion.name}</button>`
-        );
-    });
-
-    map.on("popupopen", () => {
-      document.querySelectorAll(".popup-btn").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          const id = (e.target as HTMLElement).getAttribute("data-id");
-          console.log("Clicked pavilion ID:", id);
-        });
-      });
-    });
-
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "© OpenStreetMap contributors",
-    }).addTo(map);
-  });
+  function handleModeChange(event: Event) {
+    mode = (event.target as HTMLSelectElement).value;
+    filter = "すべて";
+  }
 </script>
 
-<div id="map"></div>
+<Header />
+<div class="mode-selector">
+  <label for="mode">モードを選択:</label>
+  <select id="mode" bind:value={mode} on:change={handleModeChange}>
+    <option value="トイレ">トイレ</option>
+    <option value="自販機">自販機</option>
+  </select>
+</div>
+<FilterMenu {filter} {categories} onChange={handleFilterChange} />
+<MapView {pavilions} {filter} />
+
+<style>
+  .mode-selector {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 100px;
+    left: 30px;
+    z-index: 1002;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+</style>

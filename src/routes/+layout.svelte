@@ -4,4 +4,6 @@
 </script>
 
 <Header />
-<slot />
+<main style="padding-top: 30px;">
+  <slot />
+</main>

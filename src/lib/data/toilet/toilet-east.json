@@ -1,0 +1,55 @@
+[
+    {
+    "id": "easttoilet1",
+    "name": "O41",
+    "lat": 34.6511442,
+    "lng": 135.3891226,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "violet",
+        "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+
+    },
+    {
+    "id": "easttoilet2",
+    "name": "O42",
+    "lat": 34.6502174,
+    "lng": 135.3903844,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "violet",
+        "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    },
+    {
+    "id": "easttoilet3",
+    "name": "E33",
+    "lat":  34.6496690,
+    "lng": 135.3900063,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "violet",
+            "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    },
+    {
+    "id": "easttoilet4",
+    "name": "E34",
+    "lat": 34.6491514,
+    "lng": 135.3898860,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "violet",
+                "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    }
+]

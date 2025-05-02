@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { pavilions } from "$lib/pavilions";
   import "../../app.css";
 
   let menuOpen = false;
@@ -13,8 +12,8 @@
       ☰
     </button>
     <nav class:open={menuOpen}>
-      <a href="/about">about</a>
-      <a href="https://github.com/atmatjp/butumori" target="_blank">github</a>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
     </nav>
   </div>
 </header>

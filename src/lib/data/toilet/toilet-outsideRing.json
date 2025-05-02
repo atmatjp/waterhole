@@ -1,0 +1,80 @@
+[
+    {
+    "id": "toilet1",
+    "name": "W76",
+    "lat": 34.64840544,
+    "lng":135.37956401,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+     "male": true,
+    "female": true,
+    "unisex": true,
+    "wheelchair": true
+    },
+    {
+    "id": "toilet2",
+    "name": "W77",
+    "lat": 34.6486261,
+    "lng":135.3795334,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+     "male": true,
+    "female": true,
+    "unisex": true,
+    "wheelchair": true
+    },
+    {
+    "id": "toilet3",
+    "name": "W47",
+    "lat": 34.6513938,
+    "lng":135.3808825,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+     "male": true,
+    "female": true,
+    "unisex": true,
+    "wheelchair": true
+    },
+    {
+    "id": "toilet4",
+    "name": "W43",
+    "lat": 34.6521810,
+    "lng":135.3838233,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+    "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    },
+    {
+    "id": "toilet5",
+    "name": "二億円のトイレW41",
+    "lat": 34.6520877,
+    "lng":135.3844721,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+    "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    },
+    {
+    "id": "toilet6",
+    "name": "E46",
+    "lat": 34.6519993,
+    "lng": 135.3849069,
+    "description":"mele,female only",
+    "tags": ["トイレ"],
+    "iconColor": "blue",
+    "male": true,
+    "female": true,
+    "unisex": false,
+    "wheelchair": true
+    }
+]

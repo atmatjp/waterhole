@@ -1,0 +1,11 @@
+[
+    {
+    "id": "toilet8",
+    "name": "自販機",
+    "lat": 33.64964,
+    "lng":135.3809,
+    "description":"mele,female only",
+    "tags": ["自販機"],
+    "iconColor": "red"
+    }
+]
