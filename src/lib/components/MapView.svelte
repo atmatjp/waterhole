@@ -121,7 +121,15 @@
 </script>
 
 <div id="map"></div>
-<button class="locate-button" on:click={locateUser}>現在地</button>
+<button
+  class="locate-button"
+  on:click={() => {
+    console.log("clicked");
+    locateUser();
+  }}
+>
+  現在地
+</button>
 
 <style>
   #map {
@@ -141,6 +149,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
+    pointer-events: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .locate-button {
+    touch-action: manipulation;
+    cursor: pointer;
   }
 </style>
