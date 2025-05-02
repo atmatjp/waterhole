@@ -2,6 +2,7 @@
   import Header from "$lib/components/Header.svelte";
   import MapView from "$lib/components/MapView.svelte";
   import FilterMenu from "$lib/components/FilterMenu.svelte";
+  import ModeSelector from "$lib/components/ModeSelector.svelte";
   import easttoilet from "$lib/data/toilet/toilet-east.json";
   import westtoilet from "$lib/data/toilet/toilet-west.json";
   import underRingToilet from "$lib/data/toilet/toilet-underRing.json";
@@ -33,33 +34,16 @@
     filter = value;
   }
 
-  function handleModeChange(event: Event) {
-    mode = (event.target as HTMLSelectElement).value;
+  function handleModeChange(value: string) {
+    mode = value;
     filter = "すべて";
   }
 </script>
 
 <Header />
-<div class="mode-selector">
-  <label for="mode">モードを選択:</label>
-  <select id="mode" bind:value={mode} on:change={handleModeChange}>
-    <option value="トイレ">トイレ</option>
-    <option value="自販機">自販機</option>
-  </select>
-</div>
+<ModeSelector {mode} onChange={handleModeChange} />
 <FilterMenu {filter} {categories} onChange={handleFilterChange} />
 <MapView {pavilions} {filter} />
 
 <style>
-  .mode-selector {
-    font-size: 1.2em;
-    position: absolute;
-    bottom: 100px;
-    left: 30px;
-    z-index: 1002;
-    background: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
 </style>
