@@ -11,7 +11,9 @@
   import type { Pavilion } from "$lib/types";
 
   $: categories =
-    mode === "トイレ" ? ["ジェンダー", "一般", "車椅子", "すべて"] : ["すべて"];
+    mode === "トイレ"
+      ? ["ジェンダートイレ", "一般トイレ", "車椅子トイレ", "すべて"]
+      : ["飲料", "すべて"];
 
   let filter = "すべて";
   let mode = "トイレ";
