@@ -28,5 +28,4 @@
 
 <Header />
 <FilterMenu {filter} {categories} onChange={handleFilterChange} />
-<p style="margin: 1em;">252台中 <strong>{totalCount}</strong> 台を掲載中</p>
 <MapView {pavilions} {filter} />
