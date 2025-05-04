@@ -22,8 +22,8 @@
   .filter {
     font-size: 1.2em;
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    bottom: 20px;
+    left: 10px;
     z-index: 1001;
     background: white;
     padding: 0.5rem 1rem;
@@ -31,11 +31,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .filter {
-      font-size: 1.2em;
+      font-size: 0.9em;
       position: absolute;
-      bottom: 30px;
+      bottom: 10px;
       left: 10px;
       z-index: 1001;
       background: white;

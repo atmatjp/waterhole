@@ -3,6 +3,7 @@
   import MapView from "$lib/components/MapView.svelte";
   import FilterMenu from "$lib/components/FilterMenu.svelte";
   import ModeSelector from "$lib/components/ModeSelector.svelte";
+  import VendCount from "$lib/components/Vend.svelte"; // ← 追加
 
   import vending from "$lib/data/vending.json";
   import type { Pavilion } from "$lib/types";
@@ -22,10 +23,10 @@
     filter = value;
   }
 
-  // 🔽 count の合計を動的に計算
   $: totalCount = pavilions.reduce((sum, p) => sum + (p.count ?? 0), 0);
 </script>
 
 <Header />
 <FilterMenu {filter} {categories} onChange={handleFilterChange} />
 <MapView {pavilions} {filter} />
+<VendCount total={totalCount} max={TOTAL} /><!-- ← 追加 -->
