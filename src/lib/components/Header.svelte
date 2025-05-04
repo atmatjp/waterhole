@@ -26,7 +26,8 @@
       <nav class:open={menuOpen}>
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="https://github.com/atmatjp/butumori" target="_blank">github</a>
+        <a href="https://github.com/atmatjp/waterhole" target="_blank">github</a
+        >
       </nav>
     </div>
   </div>
