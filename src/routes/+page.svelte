@@ -3,47 +3,30 @@
   import MapView from "$lib/components/MapView.svelte";
   import FilterMenu from "$lib/components/FilterMenu.svelte";
   import ModeSelector from "$lib/components/ModeSelector.svelte";
-  import easttoilet from "$lib/data/toilet/toilet-east.json";
-  import westtoilet from "$lib/data/toilet/toilet-west.json";
-  import underRingToilet from "$lib/data/toilet/toilet-underRing.json";
-  import outsideRingtoilet from "$lib/data/toilet/toilet-outsideRing.json";
-  import insideRingtoilet from "$lib/data/toilet/toilet-insideRing.json";
+
   import vending from "$lib/data/vending.json";
   import type { Pavilion } from "$lib/types";
 
-  $: categories =
-    mode === "トイレ"
-      ? ["車椅子トイレ", "男女兼用トイレ", "男女別トイレのみ", "すべて"]
-      : ["飲料", "すべて"];
-
   let filter = "すべて";
-  let mode = "トイレ";
+  const TOTAL = 252;
+  const pavilions = vending as Pavilion[];
 
-  $: pavilions =
-    mode === "トイレ"
-      ? [
-          ...(easttoilet as Pavilion[]),
-          ...(westtoilet as Pavilion[]),
-          ...(insideRingtoilet as Pavilion[]),
-          ...(outsideRingtoilet as Pavilion[]),
-          ...(underRingToilet as Pavilion[]),
-        ]
-      : (vending as Pavilion[]);
+  const categories = [
+    "すべて",
+    ...Array.from(
+      new Set(pavilions.map((p) => p.category).filter((c): c is string => !!c))
+    ),
+  ];
 
   function handleFilterChange(value: string) {
     filter = value;
   }
 
-  function handleModeChange(value: string) {
-    mode = value;
-    filter = "すべて";
-  }
+  // 🔽 count の合計を動的に計算
+  $: totalCount = pavilions.reduce((sum, p) => sum + (p.count ?? 0), 0);
 </script>
 
 <Header />
-<ModeSelector {mode} onChange={handleModeChange} />
 <FilterMenu {filter} {categories} onChange={handleFilterChange} />
+<p style="margin: 1em;">252台中 <strong>{totalCount}</strong> 台を掲載中</p>
 <MapView {pavilions} {filter} />
-
-<style>
-</style>

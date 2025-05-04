@@ -8,8 +8,8 @@ export type Pavilion = {
   description: string;
   tags: string[];
   iconColor?: "red" | "violet" | "orange" | "gray" | "green" | "gold"|"blue"|"black";
-  male?: boolean;
-  female?: boolean;
-  unisex?: boolean;
-  wheelchair?: boolean;
+  category?: string;
+   payment?: string[];
+  items?: string[]; 
+ features?: string[];count ?:number;
 };

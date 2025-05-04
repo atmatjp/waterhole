@@ -34,10 +34,7 @@
 
     const filtered = pavilions.filter((p) => {
       if (filter === "すべて") return true;
-      if (filter === "男女兼用トイレ") return p.unisex;
-      if (filter === "男女別トイレのみ") return p.male && p.female && !p.unisex;
-      if (filter === "車椅子トイレ") return p.wheelchair;
-      return true;
+      return p.category === filter;
     });
 
     filtered.forEach((pavilion) => {
@@ -53,17 +50,13 @@
 
       const marker = L.marker([pavilion.lat, pavilion.lng], { icon }).addTo(map)
         .bindPopup(`
-  <div>
-    <strong>${pavilion.name}</strong><br />
-    <ul style="margin: 0; padding: 0.5em 0 0 1em; font-size: 0.9em;">
-      <li>男性用　: ${pavilion.male ? "yes" : "no"}</li>
-      <li>女性用　: ${pavilion.female ? "yes" : "no"}</li>
-      <li>男女兼用: ${pavilion.unisex ? "yes" : "no"}</li>
-      <li>車椅子　: ${pavilion.wheelchair ? "yes" : "no"}</li>
-    </ul>
-    <button class="popup-btn" data-id="${pavilion.id}">もっと見る</button>
-  </div>
-`);
+    <div>
+      <strong>${pavilion.name}</strong><br />
+      <p>売っているもの: ${pavilion.category}</p>
+      ${pavilion.count ? `<p>台数: ${pavilion.count}</p>` : ""}
+      ${pavilion.payment?.length ? `<p>決済方法: ${pavilion.payment.join(", ")}</p>` : ""}
+${pavilion.features?.length ? `<p>${pavilion.features.join(", ")}</p>` : ""}    </div>
+  `);
       markers.push(marker);
     });
 

@@ -8,5 +8,7 @@ export type Pavilion = {
   lng: number;
   description: string;
   tags: string[];
-  iconColor?: 'red' | 'violet' | 'orange' | 'gray' | 'green'; // ここ！
+  iconColor?: 'red' | 'violet' | 'orange' | 'gray' | 'green';
+   payment?: string[];
+  items?: string[]; 
 };

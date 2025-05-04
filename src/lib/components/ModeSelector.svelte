@@ -1,4 +1,4 @@
-<script lang="ts">
+<!--<script lang="ts">
   export let mode: string;
   export let onChange: (value: string) => void;
 
@@ -9,7 +9,7 @@
 </script>
 
 <div class="mode-selector">
-  <label for="mode">モードを選択:</label>
+  <label for="mode">何を探す？:</label>
   <select id="mode" bind:value={mode} on:change={handleChange}>
     <option value="トイレ">トイレ</option>
     <option value="自販機">自販機</option>
@@ -42,3 +42,4 @@
     }
   }
 </style>
+-->

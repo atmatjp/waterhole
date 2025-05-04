@@ -1,11 +1,157 @@
 [
-    {
-    "id": "toilet8",
-    "name": "自販機",
-    "lat": 33.64964,
-    "lng":135.3809,
-    "description":"mele,female only",
-    "tags": ["自販機"],
-    "iconColor": "red"
-    }
+  {
+    "id": "v001",
+    "name": "駅内",
+    "lat": 34.650678,
+    "lng": 135.392385,
+    "iconColor": "green",
+    "category": "飲料・食べ物",
+    "payment": ["現金", "キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v002",
+    "name": "従業員ゲート前",
+    "lat": 34.651438,
+    "lng": 135.389069,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["現金", "キャッシュレス"],
+    "count": 3
+  },
+  {
+    "id": "v003",
+    "name": "団体休憩所東",
+    "lat": 34.650840,
+    "lng": 135.388398,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 5,
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v004",
+    "name": "忘れ物センター前",
+    "lat": 34.649849,
+    "lng": 135.390033,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v005",
+    "name": "迷子ベビーセンター前",
+    "lat": 34.649782,
+    "lng": 135.390241,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 3,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v006",
+    "name": "たこ焼きくくる横",
+    "lat": 34.649101,
+    "lng": 135.388383,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 3
+  },
+  {
+    "id": "v007",
+    "name": "アイルランドパビリオンと大阪パビリオンの間",
+    "lat": 34.650767,
+    "lng": 135.386271,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8, 
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v008",
+    "name": "二億円トイレの近く",
+    "lat": 34.651905,
+    "lng": 135.384118,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v009",
+    "name": "スペインパビリオンの前",
+    "lat": 34.651868,
+    "lng": 135.383152,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v010",
+    "name": "宴ハピリオンの横",
+    "lat": 34.651552,
+    "lng": 135.381313,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 2
+  },
+  {
+    "id": "v011",
+    "name": "宴パビリオン横の案内所",
+    "lat": 34.651537,
+    "lng": 135.381197,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 2
+  },
+  {
+    "id": "v012",
+    "name": "多機能休憩室の前",
+    "lat": 34.651742,
+    "lng": 135.381017,
+    "iconColor": "green",
+    "category": "限定アメニティ",
+    "payment": ["キャッシュレス"],
+    "count": 3
+  },
+  {
+    "id": "v013",
+    "name": "多機能休憩室の中",
+    "lat": 34.651545,
+    "lng": 135.380969,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 2,
+    "features": ["授乳室", "おむつ交換室", "フリーウォーターあり"]
+  },
+  {
+    "id": "v014",
+    "name": "jr西日本グループトラック横",
+    "lat": 34.651031,
+    "lng": 135.381055,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v015",
+    "name": "ガンダム付近",
+    "lat": 34.650647,
+    "lng": 135.380499,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4,
+    "features": ["フリーウォーターあり"]
+  }
 ]

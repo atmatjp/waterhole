@@ -10,7 +10,7 @@
 </script>
 
 <div class="filter">
-  <label for="filter">どこへ行く？:</label>
+  <label for="filter">何が欲しい？</label>
   <select id="filter" bind:value={filter} on:change={handleChange}>
     {#each categories as category}
       <option value={category}>{category}</option>
