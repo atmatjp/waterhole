@@ -1,38 +1,15 @@
-# sv
+# Waterhole
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Waterhole は、大阪・関西万博に設置された 252 台の自動販売機の位置情報を地図上にマークアップした簡易的な地図アプリケーションです。
 
-## Creating a project
+現時点で 52 台のマークアップが完了しています。  
+また、グッズが買える自販機、飲料が買える自販機など、販売しているジャンルごとにフィルターで分けて表示することが可能です。
 
-If you're seeing this, you've probably already done this step. Congrats!
+問題や改善要望などがあれば歓迎します。
 
-```bash
-# create a new project in the current directory
-npx sv create
+## 特徴
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- 自動販売機の位置を地図上に表示
+- ジャンル別にフィルタ表示が可能（例：グッズ、飲料）
+- 軽量でシンプルな構成
+- モバイル対応
