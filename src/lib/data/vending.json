@@ -221,5 +221,45 @@
     "payment": ["キャッシュレス"],
     "count": 6,
     "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v019",
+    "name": "駅構内トイレ付近",
+    "lat": 34.651811,
+    "lng": 135.389742,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["現金"],
+    "count": 2
+  },
+  {
+    "id": "v020",
+    "name": "駅出てトイレ",
+    "lat": 34.651368,
+    "lng": 135.389207,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["現金"],
+    "count": 4
+  },
+  {
+    "id": "v021",
+    "name": "ミャクミャクハウス前",
+    "lat": 34.648806,
+    "lng": 135.386932,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v022",
+    "name": "帽子の建物付近",
+    "lat": 34.648228,
+    "lng": 135.386932,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
   }
 ]
