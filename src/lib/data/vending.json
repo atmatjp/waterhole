@@ -6,7 +6,7 @@
     "lng": 135.38918151602326,
     "iconColor": "green",
     "category": "飲料",
-    "payment": ["不明"],
+    "payment": ["現金","キャッシュレス"],
     "count": 3
   },
   {
