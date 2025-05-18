@@ -261,5 +261,173 @@
     "category": "飲料",
     "payment": ["キャッシュレス"],
     "count": 4
+  },
+   {
+    "id": "v023",
+    "name": "駅構内トイレ付近",
+    "lat": 34.651811,
+    "lng": 135.389742,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["現金"],
+    "count": 2
+  },
+  {
+    "id": "v024",
+    "name": "駅外トイレ付近",
+    "lat": 34.651368,
+    "lng": 135.389207,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["現金"],
+    "count": 4
+  },
+  {
+    "id": "v025",
+    "name": "ミャクミャクハウス前",
+    "lat": 34.648806,
+    "lng": 135.386932,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v026",
+    "name": "ミャクミャクくじ付近",
+    "lat": 34.647703,
+    "lng": 135.386814,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v027",
+    "name": "静けさの森トイレ近く",
+    "lat": 34.650059,
+    "lng": 135.384433,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 5,
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v028",
+    "name": "自販機",
+    "lat": 34.650479,
+    "lng": 135.383690,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 7,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v029",
+    "name": "自販機",
+    "lat": 34.649998,
+    "lng": 135.382667,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 6,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v030",
+    "name": "落合館前",
+    "lat": 34.647373,
+    "lng": 135.383277,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v031",
+    "name": "アンゴラパビリオン前",
+    "lat": 34.647624,
+    "lng": 135.382336,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
+  },
+  {
+    "id": "v032",
+    "name": "コモンズd付近",
+    "lat": 34.648515,
+    "lng": 135.380828,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v033",
+    "name": "リング端",
+    "lat": 34.648210,
+    "lng": 135.380063,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8
+  },
+  {
+    "id": "v034",
+    "name": "ベルギーパビリオン前",
+    "lat": 34.650041,
+    "lng": 135.380098,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v035",
+    "name": "アトム横",
+    "lat": 34.650495,
+    "lng": 135.379123,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v036",
+    "name": "トイレ付近",
+    "lat": 34.651067,
+    "lng": 135.378607,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 5,
+    "features": ["aed"]
+  },
+  {
+    "id": "v037",
+    "name": "オブジェ付近",
+    "lat": 34.651061,
+    "lng": 135.378545,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 11,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v038",
+    "name": "トイレ付近",
+    "lat": 34.649564,
+    "lng": 135.384230,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4
   }
 ]
