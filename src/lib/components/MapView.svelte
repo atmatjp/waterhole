@@ -26,6 +26,10 @@
     updateMarkers();
   }
 
+  const availableCategories = [
+    ...new Set(pavilions.map((p) => p.category).filter(Boolean)),
+  ];
+
   function updateMarkers() {
     if (!map) return;
 
@@ -35,43 +39,9 @@
     const filtered = pavilions.filter((p) => {
       if (filter === "すべて") return true;
 
-      if (filter === "飲料" || filter === "グッズ") {
+      if (availableCategories.includes(filter)) {
         return p.category === filter;
       }
-
-      if (filter === "現金・キャッシュレス") {
-        return (
-          p.payment?.includes("現金") && p.payment?.includes("キャッシュレス")
-        );
-      }
-
-      if (filter === "キャッシュレス") {
-        return (
-          p.payment?.includes("キャッシュレス") && !p.payment?.includes("現金")
-        );
-      }
-
-      if (filter === "フリーウォーターだけ") {
-        return (
-          p.features?.includes("フリーウォーター") &&
-          !p.features?.includes("ボトル洗浄機")
-        );
-      }
-
-      if (filter === "ボトル洗浄機だけ") {
-        return (
-          p.features?.includes("ボトル洗浄機") &&
-          !p.features?.includes("フリーウォーター")
-        );
-      }
-
-      if (filter === "フリーウォーターとボトル洗浄機") {
-        return (
-          p.features?.includes("フリーウォーター") &&
-          p.features?.includes("ボトル洗浄機")
-        );
-      }
-
       return false;
     });
 
