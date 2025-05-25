@@ -19,7 +19,7 @@
 <header>
   <div bind:this={menuRef}>
     <div class="header-container">
-      <h1><a href="/">大阪万博自販機マップ</a></h1>
+      <h1><a href="/">大阪・関西万博自販機マップ</a></h1>
       <button class="hamburger" on:click={() => (menuOpen = !menuOpen)}>
         ☰
       </button>
