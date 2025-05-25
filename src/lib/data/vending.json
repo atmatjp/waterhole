@@ -429,5 +429,93 @@
     "category": "飲料",
     "payment": ["キャッシュレス"],
     "count": 4
+  },
+  {
+    "id": "v039",
+    "name": "西出口",
+    "lat": 34.652384,
+    "lng": 135.376529,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": []
+  },
+  {
+    "id": "v040",
+    "name": "西出口",
+    "lat": 34.652394,
+    "lng": 135.376530,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": []
+  },
+  {
+    "id": "v041",
+    "name": "西出口",
+    "lat": 34.652509,
+    "lng": 135.376122,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v042",
+    "name": "くら寿司裏",
+    "lat": 34.653477,
+    "lng": 135.375335,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 3,
+    "features": ["フリーウォーターあり"]
+  },
+  {
+    "id": "v043",
+    "name": "A-5団体休憩所",
+    "lat": 34.653422,
+    "lng": 135.374987,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 8,
+    "features": ["フリーウォーターあり", "ボトル洗浄機あり"]
+  },
+  {
+    "id": "v044",
+    "name": "A-1団体休憩所",
+    "lat": 34.653653,
+    "lng": 135.375251,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 4,
+    "features": []
+  },
+  {
+    "id": "v045",
+    "name": "空飛ぶ車付近",
+    "lat": 34.655023,
+    "lng": 135.376795,
+    "iconColor": "green",
+    "category": "飲料",
+    "payment": ["キャッシュレス"],
+    "count": 2,
+    "features": []
+  },
+  {
+    "id": "v046",
+    "name": "アリーナmaturiトイレ横",
+    "lat": 34.6529836,
+    "lng": 135.3747321,
+    "iconColor": "blue",
+    "category": "アイス",
+    "payment": [],
+    "count": 4,
+    "features": []
   }
 ]
