@@ -514,7 +514,7 @@
     "lng": 135.3747321,
     "iconColor": "blue",
     "category": "アイス",
-    "payment": [],
+    "payment": ["キャッシュレス"],
     "count": 4,
     "features": []
   }
