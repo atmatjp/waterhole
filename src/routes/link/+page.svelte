@@ -12,7 +12,10 @@
 <li>
   <a
     href="https://www.expo2025.or.jp/wp/wp-content/uploads/JP_MAP_R.pdf"
-    target="_blank">大阪・関西万博公式マップ</a
+    target="_blank">大阪・関西万博公式マップ(PDF)</a
+  >
+  <a href="https://www.expovisitors.expo2025.or.jp/map" target="_blank"
+    >大阪・関西万博公式マップ(デジタル)</a
   >
 </li>
 &nbsp;
