@@ -6,7 +6,6 @@
   import type { Pavilion } from "$lib/types";
 
   let filter = "すべて";
-  const TOTAL = 252;
   const pavilions = vending as Pavilion[];
 
   const categories = [
@@ -19,8 +18,6 @@
   function handleFilterChange(value: string) {
     filter = value;
   }
-
-  $: totalCount = pavilions.reduce((sum, p) => sum + (p.count ?? 0), 0);
 </script>
 
 <Header />

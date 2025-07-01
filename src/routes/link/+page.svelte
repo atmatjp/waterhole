@@ -2,12 +2,13 @@
 </script>
 
 <h2>関連リンク</h2>
-
 <li>
   <a
     href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.expo2025.or.jp/&ved=2ahUKEwiq9LyCuJaNAxVelK8BHX6TBrsQFnoECCcQAQ&usg=AOvVaw38CQeW5YnC3t_NI7wnep8G"
-    target="_blank">大阪・関西万博公式サイト</a
+    target="_blank"
   >
+    大阪・関西万博公式サイト
+  </a>
 </li>
 <li>
   <a

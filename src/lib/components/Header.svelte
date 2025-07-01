@@ -27,6 +27,7 @@
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/link">Link</a>
+        <a href="/tips">Tips</a>
       </nav>
     </div>
   </div>
