@@ -17,7 +17,7 @@
     bottom: 20px;
     right: 10px;
     z-index: 1002;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -27,6 +27,7 @@
     cursor: pointer;
   }
   .lastmod p {
+    font-size: 12px;
     margin: 0;
   }
 </style>
