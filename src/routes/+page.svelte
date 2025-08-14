@@ -2,6 +2,7 @@
   import Header from "$lib/components/Header.svelte";
   import MapView from "$lib/components/MapView.svelte";
   import FilterMenu from "$lib/components/FilterMenu.svelte";
+  import Lastmod from "$lib/components/Lastmod.svelte";
   import vending from "$lib/data/vending.json";
   import type { Pavilion } from "$lib/types";
 
@@ -23,3 +24,4 @@
 <Header />
 <FilterMenu {filter} {categories} onChange={handleFilterChange} />
 <MapView {pavilions} {filter} />
+<Lastmod />

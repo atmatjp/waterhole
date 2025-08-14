@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <!---->
 <h2>このサイトについて</h2>
 <p>
@@ -49,5 +46,8 @@
   また、本サイトで提供している情報やマップを引用・共有していただくことも可能です。
   <br />
 </p>
+<div style="text-align:right;">
+  <p>このページの最終更新日 : 2025/08/15</p>
+</div>
 &nbsp;
 <footer>Copyright(C) 大阪万博自販機マップ All Rights Reserved.</footer>

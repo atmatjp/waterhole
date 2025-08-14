@@ -12,5 +12,8 @@
   <strong>現金未対応</strong>
   ですので、現金で購入したい場合は、入場する前にそこいらの自販機で前もって購入しておく事をお勧めします。
 </p>
+<div style="text-align:right;">
+  <p>このページの最終更新日 : 2025/08/15</p>
+</div>
 &nbsp;
 <footer>Copyright(C) 大阪万博自販機マップ All Rights Reserved.</footer>

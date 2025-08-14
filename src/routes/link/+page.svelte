@@ -21,5 +21,9 @@
     >大阪・関西万博公式マップ(デジタル)</a
   >
 </li>
+<div style="text-align:right;">
+  <p>このページの最終更新日 : 2025/08/15</p>
+</div>
+
 &nbsp;
 <footer>Copyright(C) 大阪万博自販機マップ All Rights Reserved.</footer>
