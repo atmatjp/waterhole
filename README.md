@@ -1,38 +1,18 @@
-# sv
+# Waterhole
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+非公式の大阪・関西万博自販機マップです。
 
-## Creating a project
+大阪・関西万博の公式マップには何故か自販機の項目がなく、また全体的に情報が探しにくかったため独自に作成しました。
 
-If you're seeing this, you've probably already done this step. Congrats!
+現在は万博が閉幕しているため、本リポジトリは記念およびアーカイブとして公開しています。
 
-```bash
-# create a new project in the current directory
-npx sv create
+![map view](static/image.png)
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## How to run
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+git clone https://github.com/your-username/waterhole.git
+cd waterhole
+pnpm i
+pnpm dev
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
