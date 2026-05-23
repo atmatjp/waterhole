@@ -11,7 +11,7 @@
 ## How to run
 
 ```bash
-git clone https://github.com/your-username/waterhole.git
+git clone https://github.com/atmatjp/waterhole
 cd waterhole
 pnpm i
 pnpm dev
