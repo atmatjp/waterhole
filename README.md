@@ -6,6 +6,9 @@
 
 現在は万博が閉幕しているため、本リポジトリは記念およびアーカイブとして公開しています。
 
+https://vending.nyaw.pw
+
+
 ![map view](static/image.png)
 
 ## How to run
